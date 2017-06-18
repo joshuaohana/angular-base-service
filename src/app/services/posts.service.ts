@@ -25,7 +25,6 @@ export class PostsService extends BaseService {
 
   // force a manual refesh
   public getLatest(entity?: Post): Promise<Array<Post>> {
-    console.log('get latest for', entity);
     return this.load(entity);
   }
 }
